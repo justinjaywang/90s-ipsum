@@ -16,7 +16,7 @@
 
   <!-- JavaScript -->
   <script type="text/javaScript" src="http://code.jquery.com/jquery-1.9.1.js" charset="utf-8"></script>
-  <script type="text/javaScript" src="scripts/ZeroClipboard.js" charset="utf-8"></script>
+  <script type="text/javaScript" src="scripts/clipboard.js" charset="utf-8"></script>
   <script type="text/javaScript" src="scripts/main.js" charset="utf-8"></script>
 </head>
 <body>
