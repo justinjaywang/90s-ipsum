@@ -42,7 +42,7 @@ input[type="text"] {
   width: 0.6em;
   border: 0;
   margin: 0;
-  padding: 0 0.6em;
+  padding: 0 0.5em;
   -webkit-appearance: none;
   outline: none;
 }
