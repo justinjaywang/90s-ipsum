@@ -14,6 +14,9 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 * {
   -webkit-transition: all 0.05s linear;
@@ -33,7 +36,7 @@ body {
 }
 body, input[type="text"] {
   font-size: 17px;
-  line-height: 1.5em;
+  line-height: 1.6em;
   font-family: 'Inconsolata', monospace;
 }
 input[type="text"] {
@@ -72,7 +75,7 @@ input[type="text"] {
   right: 0em;
   color: <?php echo $clickFlagText; ?>;
   background: <?php echo $clickFlagBackground; ?>;
-  padding: 0 0.7em;
+  padding: 0 0.5em;
   font-style: italic;
 }
 .clicked {
