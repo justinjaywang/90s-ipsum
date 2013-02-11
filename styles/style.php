@@ -35,7 +35,7 @@ body {
   *zoom: 1;
 }
 body, input[type="text"] {
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.6em;
   font-family: 'Inconsolata', monospace;
 }
