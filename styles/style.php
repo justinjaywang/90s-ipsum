@@ -66,8 +66,11 @@ input[type="text"] {
  color: <?php echo $placeholderText; ?>;
 }
 .paragraphs {
-  margin: 1em 0 0;
+  margin: 2em 0 0;
   cursor: pointer;
+}
+.paragraph {
+  margin: 1em 0 0;
 }
 .copy-flag {
   position: fixed;
