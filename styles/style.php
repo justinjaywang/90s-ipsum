@@ -19,9 +19,9 @@ html {
   -ms-user-select: none;
 }
 * {
-  -webkit-transition: all 0.05s linear;
-  -moz-transition: all 0.05s linear;
-  transition: all 0.05s linear;
+  -webkit-transition: all 0.01s linear;
+  -moz-transition: all 0.01s linear;
+  transition: all 0.01s linear;
 }
 body {
   margin: 4em 0;
