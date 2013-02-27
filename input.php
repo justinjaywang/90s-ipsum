@@ -7,14 +7,17 @@ $greetings = array(
 $person = array(
   "dawg. ",
   "homie. ",
-  "dude. "
+  "dude. ",
+  "playa. "
 );
-$success = array(
-  "Boo ya! Generated ",
-  "Mad props! Generated ",
-  "Phat! Generated ",
-  "Word up! Generated ",
-  "Keepin’ it real with "
+$adjectives = array(
+  "the illest",
+  "fly",
+  "mad",
+  "the phattest",
+  "dope",
+  "sick",
+  "the freshest"
 );
 $input = "<input type='text' name='p' placeholder='#' autofocus='autofocus' maxlength='1'>";
 if ($numParagraphs==null) {
@@ -24,12 +27,12 @@ if ($numParagraphs==null) {
   $greetingStart = next($greetings) . next($person);
   $greeting = $greetingStart . "Enter number of paragraphs to generate and press return: " . $input;
 } else {
-  shuffle($success);
-  $greetingStart = next($success);
+  shuffle($adjectives);
+  $adjective = next($adjectives);
   if ($numParagraphs==1) {
-    $greeting = $greetingStart . $numParagraphs . " paragraph of ’90s ipsum. Try again: " . $input;
+    $greeting = "Generated " . $numParagraphs . " paragraph of " . $adjective . " filler text. Try again: " . $input;
   } else {
-    $greeting = $greetingStart . $numParagraphs . " paragraphs of ’90s ipsum. Try again: " . $input;
+    $greeting = "Generated " . $numParagraphs . " paragraphs of " . $adjective . " filler text. Try again: " . $input;
   }
   
 }

@@ -1,5 +1,6 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
+$titleColor = "#00C3D9"; // blue
 $headerColor = "#00C3D9"; // blue
 $inputBackground = "#ddd";
 $inputText = "#777";
@@ -29,10 +30,16 @@ body {
   color: #999;
 }
 .container {
-  margin: 0 0;
-  max-width: 940px;
+  margin: 0 auto;
+  max-width: 720px;
   padding: 0 2em;
   *zoom: 1;
+}
+h1 {
+  font-weight: normal;
+  color: <?php echo $titleColor; ?>;
+  /*text-align: center;*/
+  margin: 0 0 2rem;
 }
 body, input[type="text"] {
   font-size: 20px;
