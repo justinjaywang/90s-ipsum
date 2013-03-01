@@ -1,14 +1,10 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
-$titleColor = "#00C3D9"; // blue
-$headerColor = "#00C3D9"; // blue
-$inputBackground = "#ddd";
-$inputText = "#777";
-$placeholderText = "#999";
-$clickFlagBackground = "#E1FF4C"; // yellow
-$clickFlagText = "#777";
-$paragraphHoverBackground = "#eee";
-$paragraphClick = "#6B3D99"; // purple
+$blue = "#00C3D9";
+$yellow = "#E5FF00";
+$purple = "#6B3D99";
+$gray = "#777";
+$whiteish = "#eee";
 ?>
 
 html {
@@ -25,87 +21,75 @@ html {
   transition: all 0.01s linear;
 }
 body {
-  margin: 4em 0;
+  margin: 3em 0;
   background: #fff;
-  color: #999;
+  color: <?php echo $gray; ?>;
 }
 .container {
-  margin: 0 auto;
-  max-width: 720px;
-  padding: 0 2em;
+  /*margin: 0 auto;*/
+  max-width: 800px;
+  padding: 0 1.5em;
   *zoom: 1;
-}
-h1 {
-  font-weight: normal;
-  color: <?php echo $titleColor; ?>;
-  /*text-align: center;*/
-  margin: 0 0 2rem;
 }
 body, input[type="text"] {
   font-size: 20px;
-  line-height: 1.6em;
+  line-height: 1.5em;
   font-family: 'Inconsolata', monospace;
 }
 input[type="text"] {
-  background: <?php echo $inputBackground; ?>;
-  color: <?php echo $inputText; ?>;
-  width: 0.6em;
+  background: <?php echo $lightgray; ?>;
+  color: <?php echo $gray; ?>;
+  width: 2em;
   border: 0;
   margin: 0;
-  padding: 0 0.5em;
   -webkit-appearance: none;
   outline: none;
 }
 .input-text {
-  color: <?php echo $headerColor; ?>;
+  color: <?php echo $blue; ?>;
   cursor: default;
 }
 ::-webkit-input-placeholder {
- color: <?php echo $placeholderText; ?>;
+ color: <?php echo $gray; ?>;
 }
 :-moz-placeholder {
- color: <?php echo $placeholderText; ?>;  
+ color: <?php echo $gray; ?>;  
 }
 ::-moz-placeholder {
- color: <?php echo $placeholderText; ?>;
+ color: <?php echo $gray; ?>;
 }
 :-ms-input-placeholder {  
- color: <?php echo $placeholderText; ?>;
+ color: <?php echo $gray; ?>;
 }
 .paragraphs {
-  margin: 2em 0 0;
+  margin: 3em 0 0;
   cursor: pointer;
 }
 .paragraph {
-  margin: 1em 0 0;
+  margin: 1.5em 0 0;
 }
 .copy-flag {
   position: fixed;
   top: 0em;
   right: 0em;
-  color: <?php echo $clickFlagText; ?>;
-  background: <?php echo $clickFlagBackground; ?>;
+  color: <?php echo $gray; ?>;
+  background: <?php echo $yellow; ?>;
   padding: 0 0.5em;
   font-style: italic;
 }
 .clicked {
-  background: <?php echo $paragraphHoverBackground; ?>;
-  color: <?php echo $paragraphClick; ?>;
+  background: <?php echo $whiteish; ?>;
+  color: <?php echo $purple; ?>;
 }
 .hovered {
-  background: <?php echo $paragraphHoverBackground; ?>;
+  background: <?php echo $whiteish; ?>;
 }
-@media only screen and (max-width: 480px) {
-  body, input[type="text"], input[type="submit"] {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px)  {
+@media only screen and (max-width: 767px) {
   body, input[type="text"], input[type="submit"] {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   body, input[type="text"], input[type="submit"] {
     font-size: 20px;
   }
