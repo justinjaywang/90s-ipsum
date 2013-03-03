@@ -11,9 +11,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles/style.php">
 
-  <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-
   <!-- JavaScript -->
   <script type="text/javaScript" src="http://code.jquery.com/jquery-1.9.1.js" charset="utf-8"></script>
   <script type="text/javaScript" src="scripts/clipboard.js" charset="utf-8"></script>

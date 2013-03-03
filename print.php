@@ -3,7 +3,6 @@ $paragraphsPlain = "";
 foreach ($paragraphs as $p) {
   $paragraphsPlain .= $p . "\n";
 }
-echo "&mdash;<br>";
 echo "<div id='copy-button' class='paragraphs' data-clipboard-text='" . $paragraphsPlain . "' title=''>";
 
 foreach ($paragraphs as $p) {
