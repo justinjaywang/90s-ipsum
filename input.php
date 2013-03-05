@@ -4,7 +4,7 @@ $adjectives = array(
   "the illest",
   "fly",
   "mad",
-  "the phattest",
+  "phat",
   "dope",
   "sick",
   "fresh"
@@ -12,7 +12,7 @@ $adjectives = array(
 $input = "<input type='text' name='p' placeholder='' autofocus='autofocus' maxlength='1'>";
 if ($numParagraphs==null) {
   // empty, 0, or any integer
-  $greeting = "Number of paragraphs to generate &rarr; " . $input;
+  $greeting = "<strong>’90s ipsum</strong>—number of paragraphs to generate &rarr; " . $input;
 } else {
   shuffle($adjectives);
   $adjective = next($adjectives);
@@ -21,7 +21,6 @@ if ($numParagraphs==null) {
   } else {
     $greeting = "Generated " . $numParagraphs . " paragraphs of " . $adjective . " filler text. Try again &rarr; " . $input;
   }
-  
 }
 echo $greeting;
 ?>

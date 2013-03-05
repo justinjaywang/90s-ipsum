@@ -24,11 +24,9 @@
   <span class="copy-flag"></span>
   <div class="container">
     <form action="" method="post">
-      <div class="input-text">
-        <?php
-        include 'input.php'; // print text input
-        ?>
-      </div>
+      <?php
+      include 'select.php';
+      ?>
     </form>
     <?php
     include 'print.php';
