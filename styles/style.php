@@ -28,8 +28,8 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 31em;
-  padding: 0 1.5em;
+  max-width: 660px;
+  padding: 0 1.25em;
   *zoom: 1;
 }
 body, select {
@@ -41,10 +41,8 @@ body, select {
   cursor: pointer;
 }
 .paragraph {
-  margin: 1em 0 0;
-}
-.paragraph:first-child {
-  margin-top: 1.5em;
+  margin: 1.5em 0 0;
+  word-break: hyphenate;
 }
 .copy-flag {
   position: fixed;
@@ -63,7 +61,10 @@ body, select {
   background: <?php echo $whiteish; ?>;
 }
 @media only screen and (max-width: 767px) {
-  body, input[type="text"], input[type="submit"] {
-    font-size: 22px;
+  body, select {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 432px;
   }
 }
