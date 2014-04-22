@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>90s Ipsum</title>
+  <title>90s ipsum</title>
   <meta name="description" content="Dope filler text for your design project.">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,9 +18,8 @@
   <span class="copy-flag"></span>
   <div class="container">
     <form action="" method="post">
-      <strong>90s ipsum</strong>
+      <p class="title">90s ipsum</p>
       <div class="input-text">
-
         <?php
         include 'input.php'; // print text input
         ?>

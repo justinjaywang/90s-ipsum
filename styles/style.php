@@ -3,8 +3,11 @@ header("Content-type: text/css; charset: UTF-8");
 $blue = "#2EC7E5";
 $yellow = "#E1FF33";
 $purple = "#6B3D99";
-$gray = "#777";
+$darkergray = "#777";
+$gray = "#888";
+$lightgray = "#ccc";
 $whiteish = "#eee";
+$white = "fff";
 ?>
 
 html {
@@ -14,11 +17,6 @@ html {
   -webkit-user-select: none;     
   -moz-user-select: none;
   -ms-user-select: none;
-}
-* {
-  -webkit-transition: all 0.01s linear;
-  -moz-transition: all 0.01s linear;
-  transition: all 0.01s linear;
 }
 body {
   margin: 1.5em 0 4.5em;
@@ -32,23 +30,30 @@ body {
   padding: 0 1.25em;
   *zoom: 1;
 }
-body, select {
+body, input[type="text"] {
   font-size: 24px;
   line-height: 1.5em;
   font-family: helvetica, arial, sans-serif;
 }
+.title {
+  color: <?php echo $purple; ?>;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.title, .input-text {
+  cursor: default;
+}
+.input-text {
+  color: <?php echo $lightgray; ?>;
+}
 input[type="text"] {
-  background: <?php echo $lightgray; ?>;
-  color: <?php echo $gray; ?>;
+  background: <?php echo $white; ?>;
+  color: <?php echo $lightgray; ?>;
   width: 2em;
   border: 0;
   margin: 0;
   -webkit-appearance: none;
   outline: none;
-}
-.input-text {
-  color: <?php echo $blue; ?>;
-  cursor: default;
 }
 ::-webkit-input-placeholder {
  color: <?php echo $gray; ?>;
@@ -80,13 +85,14 @@ input[type="text"] {
 }
 .clicked {
   background: <?php echo $whiteish; ?>;
-  color: <?php echo $purple; ?>;
+  color: <?php echo $darkergray; ?>;
 }
 .hovered {
   background: <?php echo $whiteish; ?>;
+  color: <?php echo $darkergray; ?>;
 }
 @media only screen and (max-width: 767px) {
-  body, select {
+  body, input[type="text"] {
     font-size: 18px;
   }
   .container {
