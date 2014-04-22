@@ -46,9 +46,10 @@ body, input[type="text"] {
   color: <?php echo $lightgray; ?>;
 }
 input[type="text"] {
-  background: <?php echo $white; ?>;
-  color: <?php echo $lightgray; ?>;
-  width: 2em;
+  background: <?php echo $whiteish; ?>;
+  color: <?php echo $gray; ?>;
+  width: 0.6em;
+  padding: 0 0.5em;
   border: 0;
   margin: 0;
   -webkit-appearance: none;
