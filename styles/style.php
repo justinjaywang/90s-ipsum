@@ -1,6 +1,5 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
-$blue = "#2EC7E5";
 $yellow = "#E1FF33";
 $purple = "#6B3D99";
 $darkergray = "#777";
