@@ -12,12 +12,12 @@ $adjectives = array(
 $input = "<input type='text' name='p' placeholder='' autofocus='autofocus' maxlength='1'>";
 if ($numParagraphs==null) {
   // empty, 0, or any integer
-  $greeting = "<strong>’90s ipsum</strong>—number of paragraphs to generate &rarr; " . $input;
+  $greeting = "Number of paragraphs to generate &rarr; " . $input;
 } else {
   shuffle($adjectives);
   $adjective = next($adjectives);
   if ($numParagraphs==1) {
-    $greeting = "Generated " . $numParagraphs . " paragraph of " . $adjective . " filler text. Try again &rarr; " . $input;
+    $greeting = "Generated a paragraph of " . $adjective . " filler text. Try again &rarr; " . $input;
   } else {
     $greeting = "Generated " . $numParagraphs . " paragraphs of " . $adjective . " filler text. Try again &rarr; " . $input;
   }

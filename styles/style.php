@@ -37,6 +37,31 @@ body, select {
   line-height: 1.5em;
   font-family: helvetica, arial, sans-serif;
 }
+input[type="text"] {
+  background: <?php echo $lightgray; ?>;
+  color: <?php echo $gray; ?>;
+  width: 2em;
+  border: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  outline: none;
+}
+.input-text {
+  color: <?php echo $blue; ?>;
+  cursor: default;
+}
+::-webkit-input-placeholder {
+ color: <?php echo $gray; ?>;
+}
+:-moz-placeholder {
+ color: <?php echo $gray; ?>;  
+}
+::-moz-placeholder {
+ color: <?php echo $gray; ?>;
+}
+:-ms-input-placeholder {  
+ color: <?php echo $gray; ?>;
+}
 .paragraphs {
   cursor: pointer;
 }
