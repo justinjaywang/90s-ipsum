@@ -96,6 +96,6 @@ input[type="text"] {
     font-size: 18px;
   }
   .container {
-    max-width: 432px;
+    max-width: 480px;
   }
 }
