@@ -25,12 +25,12 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 660px;
+  max-width: 680px;
   padding: 0 1.25em;
   *zoom: 1;
 }
 body, input[type="text"] {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5em;
   font-family: helvetica, arial, sans-serif;
 }
@@ -93,9 +93,9 @@ input[type="text"] {
 }
 @media only screen and (max-width: 767px) {
   body, input[type="text"] {
-    font-size: 18px;
+    font-size: 18.5px;
   }
   .container {
-    max-width: 480px;
+    max-width: 540px;
   }
 }
