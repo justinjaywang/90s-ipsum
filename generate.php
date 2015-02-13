@@ -17,7 +17,7 @@ function generateIpsum($numParagraphs) {
 function generateParagraph() {
   // Returns paragraph.
   global $allWords;
-  $numPhrases = mt_rand(6,9);
+  $numPhrases = mt_rand(6,8);
   shuffle($allWords);
   $paragraph = generatePhrases($allWords, $numPhrases, "", ".");
   // echo "<p class='paragraph'>" . $paragraph . "</p>";
@@ -31,7 +31,7 @@ function generatePhrases($words, $numPhrases, $phrasesSoFar, $currDelimiter) {
     $phrases = substr_replace($phrasesSoFar, ".", -2);
     return $phrases;
   } else {
-    $numWords = mt_rand(4,7);
+    $numWords = mt_rand(4,6);
     if ($currDelimiter==".") {
       // start of new sentence, capitalize first word
       $phrasesSoFar .= ucfirst(next($words)) . " ";
@@ -43,7 +43,7 @@ function generatePhrases($words, $numPhrases, $phrasesSoFar, $currDelimiter) {
       $phrasesSoFar .= next($words) . $currDelimiter . " ";
       return generatePhrases($words, $numPhrases-1, $phrasesSoFar, $currDelimiter);
     } else {
-      // delimiter was comma, do no capitalize first word
+      // delimiter was comma, do not capitalize first word
       for ($i=1; $i<$numWords; $i++) {
         $phrasesSoFar .= next($words) . " ";
       }
