@@ -1,12 +1,11 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
-$yellow = "#E1FF33";
-$purple = "#6B3D99";
-$darkergray = "#777";
 $gray = "#888";
 $lightgray = "#ccc";
 $whiteish = "#eee";
 $white = "fff";
+$selectionBackground = "rgba(204,255,0,0.25)";
+$selectionColor = "#666";
 ?>
 
 html {
@@ -18,15 +17,12 @@ html {
   -ms-user-select: none;
 }
 body {
-  margin: 1.5em 0 4.5em;
-  background: #fff;
+  background: <?php echo $white; ?>;
   color: <?php echo $gray; ?>;
-  text-rendering: optimizeLegibility;
-}
-.container {
-  margin: 0 auto;
   max-width: 680px;
+  margin: 3em auto 4.5em;
   padding: 0 1.25em;
+  text-rendering: optimizeLegibility;
   *zoom: 1;
 }
 body, input[type="text"] {
@@ -35,7 +31,7 @@ body, input[type="text"] {
   font-family: helvetica, arial, sans-serif;
 }
 .title {
-  color: <?php echo $purple; ?>;
+  font-size: inherit;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -67,35 +63,26 @@ input[type="text"] {
 :-ms-input-placeholder {  
  color: <?php echo $gray; ?>;
 }
-.paragraphs {
-  cursor: pointer;
-}
-.paragraph {
-  margin: 1.5em 0 0;
+p {
+  margin: 0 0 1.5em;
   word-break: hyphenate;
 }
-.copy-flag {
-  position: fixed;
-  top: 0em;
-  right: 0em;
-  color: <?php echo $gray; ?>;
-  background: <?php echo $yellow; ?>;
-  padding: 0 0.5em;
-  font-style: italic;
+.paragraph span {
+  -webkit-user-select: text;     
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
-.clicked {
-  background: <?php echo $whiteish; ?>;
-  color: <?php echo $darkergray; ?>;
+::-moz-selection { 
+  background: <?php echo $selectionBackground; ?>;
+  color: <?php echo $selectionColor; ?>;
 }
-.hovered {
-  background: <?php echo $whiteish; ?>;
-  color: <?php echo $darkergray; ?>;
+::selection { 
+  background: <?php echo $selectionBackground; ?>;
+  color: <?php echo $selectionColor; ?>;
 }
 @media only screen and (max-width: 767px) {
   body, input[type="text"] {
-    font-size: 18.5px;
-  }
-  .container {
+    font-size: 18px;
     max-width: 540px;
   }
 }
