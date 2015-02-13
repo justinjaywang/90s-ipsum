@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <!-- CSS -->
   <link rel="stylesheet" href="styles/style.php">
 </head>
 <body>
@@ -15,23 +14,16 @@
   include 'words.php'; // $allWords, $ninetiesWords
   include 'generate.php'; // $paragraphs
   ?>
-  <span class="copy-flag"></span>
-  <div class="container">
-    <form action="" method="post">
-      <p class="title">90s ipsum</p>
-      <div class="input-text">
-        <?php
-        include 'input.php'; // print text input
-        ?>
-      </div>
-    </form>
+  <form method="post">
     <?php
-    include 'print.php';
+    include 'title.php'; // print title
     ?>
-  </div>
-  <!-- JavaScript -->
-  <script type="text/javaScript" src="http://code.jquery.com/jquery-1.9.1.js" charset="utf-8"></script>
-  <script type="text/javaScript" src="scripts/clipboard.js" charset="utf-8"></script>
-  <script type="text/javaScript" src="scripts/main.js" charset="utf-8"></script>
+    <?php
+    include 'input.php'; // print text input
+    ?>
+  </form>
+  <?php
+  include 'print.php';
+  ?>
 </body> 
 </html>
