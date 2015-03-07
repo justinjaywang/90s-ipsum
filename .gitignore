@@ -21,4 +21,5 @@ _site
 Thumbs.db
 
 # Project-specific
-text/*
+text/
+meta/
