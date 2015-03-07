@@ -9,9 +9,7 @@ $selectionColor = "#666";
 ?>
 
 html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  font-size: 22px;
   -webkit-user-select: none;     
   -moz-user-select: none;
   -ms-user-select: none;
@@ -19,15 +17,15 @@ html {
 body {
   background: <?php echo $white; ?>;
   color: <?php echo $gray; ?>;
-  max-width: 680px;
-  margin: 3em auto 4.5em;
-  padding: 0 1.25em;
+  width: 92%;
+  max-width: 32rem;
+  margin: 3rem auto 4.5rem;
   text-rendering: optimizeLegibility;
   *zoom: 1;
 }
 body, input[type="text"] {
-  font-size: 22px;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.5;
   font-family: helvetica, arial, sans-serif;
 }
 .title {
@@ -44,8 +42,8 @@ body, input[type="text"] {
 input[type="text"] {
   background: <?php echo $whiteish; ?>;
   color: <?php echo $gray; ?>;
-  width: 0.6em;
-  padding: 0 0.5em;
+  width: 1em;
+  padding: 0 0 0 0.5em;
   border: 0;
   margin: 0;
   -webkit-appearance: none;
@@ -81,8 +79,7 @@ p {
   color: <?php echo $selectionColor; ?>;
 }
 @media only screen and (max-width: 767px) {
-  body, input[type="text"] {
-    font-size: 18px;
-    max-width: 540px;
+  html {
+    font-size: 17.5px;
   }
 }
