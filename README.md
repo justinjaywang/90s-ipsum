@@ -1,3 +1,3 @@
-# 90s ipsum
+# 90s Ipsum
 
 Dope filler text for your design project.
