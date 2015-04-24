@@ -3,7 +3,7 @@ header("Content-type: text/css; charset: UTF-8");
 $gray = "#888";
 $lightgray = "#ccc";
 $whiteish = "#eee";
-$white = "fff";
+$white = "#fff";
 $selectionBackground = "rgba(204,255,0,0.25)";
 $selectionColor = "#666";
 ?>
