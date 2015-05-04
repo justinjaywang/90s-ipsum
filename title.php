@@ -1,8 +1,10 @@
 <?php
 $colors = array(
-  "mediumspringgreen",
-  "mediumslateblue",
-  "deepskyblue"
+  "lime",
+  "aqua",
+  "blue",
+  "blueviolet",
+  "violetred"
 );
 shuffle($colors);
 $color = next($colors);
