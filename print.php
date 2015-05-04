@@ -5,7 +5,7 @@ foreach ($paragraphs as $p) {
 }
 echo "<div id='copy-button' class='paragraphs' data-clipboard-text='" . $paragraphsPlain . "' title=''>";
 foreach ($paragraphs as $p) {
-  echo "<p class='paragraph'><span>" . $p . "</span></p>";
+  echo "<p class='paragraph'><span class='paragraphInner'>" . $p . "</span></p>";
 }
 echo "\n";
 echo "</div>";

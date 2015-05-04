@@ -1,29 +1,29 @@
 <?php
 $numParagraphs = intval($_POST["p"]); 
 $adjectives = array(
-  "the illest",
   "fly",
   "mad",
   "phat",
   "dope",
   "sick",
-  "fresh"
+  "fresh",
+  "rad"
 );
-$inputAutofocus = "<input type='text' name='p' placeholder='' autofocus='autofocus' maxlength='1'>";
-$input = "<input type='text' name='p' placeholder='' maxlength='1'>";
+$startInput = "<input type='text' name='p' placeholder='Number of paragraphs ↩' autofocus='autofocus' maxlength='1'>";
+$tryAgainInput = "<input type='text' name='p' placeholder='Try again ↩' maxlength='1'>";
 if ($numParagraphs==null) {
   // empty, 0, or any integer
-  $greeting = "Number of paragraphs to generate: " . $inputAutofocus;
+  $greeting = "Dope filler text for your design project.<br>" . $startInput;
 } else {
   shuffle($adjectives);
   $adjective = next($adjectives);
   if ($numParagraphs==1) {
-    $greeting = "Generated " . $numParagraphs . " paragraph of " . $adjective . " filler text.<br>Try again: " . $input;
+    $greeting = $numParagraphs . " paragraph of " . $adjective . " filler text.<br>" . $tryAgainInput;
   } else {
-    $greeting = "Generated " . $numParagraphs . " paragraphs of " . $adjective . " filler text.<br>Try again: " . $input;
+    $greeting = $numParagraphs . " paragraphs of " . $adjective . " filler text.<br>" . $tryAgainInput;
   }
 }
-echo "<p class='input-text'>";
+echo "<p class='subtitle'>";
 echo $greeting;
 echo "</p>";
 ?>
