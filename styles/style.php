@@ -1,7 +1,7 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
 $darkGray = "#444";
-$gray = "#ccc";
+$gray = "#cfcfcf";
 $white = "#fff";
 $selectionBackground = "rgba(204,255,0,0.25)";
 $selectionColor = $darkGray;
@@ -34,14 +34,14 @@ body {
   font-weight: 700;
   line-height: 1.2;
   cursor: default;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.024em;
 }
 .title {
   margin: 0;
 }
 .subtitle {
   color: <?php echo $gray; ?>;
-  margin: 0 0 2.1em;
+  margin: 0 0 1.4em;
 }
 input[type="text"] {
   background: <?php echo $white; ?>;
@@ -98,6 +98,9 @@ input[type="text"] {
   -webkit-columns: 3;
   -moz-columns: 3;
   columns: 3;
+  -webkit-column-gap: 1.4em;
+  -moz-column-gap: 1.4em;
+  column-gap: 1.4em;
 }
 @media only screen and (max-width: 767px) {
   body {
