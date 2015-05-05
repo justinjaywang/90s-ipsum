@@ -8,8 +8,7 @@ $selectionColor = $darkGray;
 ?>
 
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
   -webkit-user-select: none;     
   -moz-user-select: none;
   -ms-user-select: none;
@@ -19,8 +18,8 @@ body {
   color: <?php echo $darkGray; ?>;
   width: 92%;
   max-width: 60em;
-  margin: 2.8em auto 8.4em;
-  font-size: 16px;
+  margin: 2.8rem auto 8.4rem;
+  font-size: 1em;
   font-family: helvetica, arial, sans-serif;
   font-weight: 400;
   line-height: 1.4;
@@ -30,7 +29,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .title, .subtitle {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 700;
   line-height: 1.2;
   cursor: default;
@@ -103,7 +102,7 @@ input[type="text"] {
   column-gap: 1.4em;
 }
 @media only screen and (max-width: 767px) {
-  body {
+  html {
     font-size: 14px;
   }
   .title, .subtitle {
