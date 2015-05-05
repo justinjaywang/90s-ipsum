@@ -37,10 +37,11 @@ body {
   letter-spacing: -0.02em;
 }
 .title {
-  margin-bottom: 0;
+  margin: 0;
 }
 .subtitle {
   color: <?php echo $gray; ?>;
+  margin: 0 0 2.1em;
 }
 input[type="text"] {
   background: <?php echo $white; ?>;
@@ -70,7 +71,7 @@ input[type="text"] {
 :-ms-input-placeholder {  
  color: inherit;
 }
-p {
+.paragraph {
   margin: 0 0 1.4em;
   word-break: hyphenate;
 }
