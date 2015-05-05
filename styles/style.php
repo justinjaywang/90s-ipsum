@@ -51,7 +51,7 @@ input[type="text"] {
   line-height: inherit;
   letter-spacing: inherit;
   text-rendering: optimizeLegibility;
-  width: 14em;
+  width: 100%;
   padding: 0;
   border: 0;
   margin: 0;
@@ -101,6 +101,9 @@ p {
 @media only screen and (max-width: 767px) {
   body {
     font-size: 14px;
+  }
+  .title, .subtitle {
+    font-size: 1.5em;
   }
 }
 @media only screen and (max-width: 480px) {

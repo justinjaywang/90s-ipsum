@@ -9,8 +9,8 @@ $adjectives = array(
   "fresh",
   "rad"
 );
-$startInput = "<input type='text' name='p' placeholder='Number of paragraphs ↩' autofocus='autofocus' maxlength='1'>";
-$tryAgainInput = "<input type='text' name='p' placeholder='Try again ↩' maxlength='1'>";
+$startInput = "<input type='text' name='p' placeholder='Enter number of paragraphs.' autofocus='autofocus' maxlength='1'>";
+$tryAgainInput = "<input type='text' name='p' placeholder='Try again.' maxlength='1'>";
 if ($numParagraphs==null) {
   // empty, 0, or any integer
   $greeting = "Dope filler text for your design project.<br>" . $startInput;
