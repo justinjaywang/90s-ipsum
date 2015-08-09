@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <title>90s Ipsum</title>
   <meta name="description" content="Dope filler text for your design project.">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="author" content="Justin Wang, http://justinjaywang.com" />
   <link rel="stylesheet" href="styles/style.php">
 </head>
 <?php
@@ -38,17 +36,18 @@ $fgColors = array(
 $bgColors = array(
   "lavenderblush",
   "mistyrose",
+  "seashell",
   "linen",
   "pink",
+  "peachpuff",
   "cornsilk",
+  "ivory",
   "lemonchiffon",
   "lightgoldenrodyellow",
-  "yellow",
   "mintcream",
   "azure",
   "honeydew",
   "lightcyan",
-  "aquamarine",
   "aliceblue",
   "ghostwhite",
   "lavender",
