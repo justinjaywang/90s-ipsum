@@ -1,7 +1,6 @@
 <?php
 header("Content-type: text/css; charset: UTF-8");
 ?>
-
 html {
   font-size: 17.5px;
   -webkit-user-select: none;     
