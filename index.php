@@ -9,21 +9,72 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="styles/style.php">
 </head>
-<body>
-  <?php
-  include 'words.php'; // $allWords, $ninetiesWords
-  include 'generate.php'; // $paragraphs
-  ?>
-  <form method="post">
+<?php
+include 'words.php'; // $allWords, $ninetiesWords
+include 'generate.php'; // $paragraphs
+$fgColors = array(
+  "red",
+  "crimson",
+  "mediumvioletred",
+  "firebrick",
+  "darkred",
+  "maroon",
+  "mediumseagreen",
+  "green",
+  "darkgreen",
+  "slateblue",
+  "darkslateblue",
+  "blue",
+  "mediumblue",
+  "darkblue",
+  "navy",
+  "indigo",
+  "magenta",
+  "darkmagenta",
+  "darkviolet",
+  "blueviolet",
+  "purple"
+);
+$bgColors = array(
+  "lavenderblush",
+  "mistyrose",
+  "linen",
+  "pink",
+  "cornsilk",
+  "lemonchiffon",
+  "lightgoldenrodyellow",
+  "yellow",
+  "mintcream",
+  "azure",
+  "honeydew",
+  "lightcyan",
+  "aquamarine",
+  "aliceblue",
+  "ghostwhite",
+  "lavender",
+  "thistle"
+);
+shuffle($fgColors);
+$fgColor = next($fgColors);
+shuffle($bgColors);
+$bgColor = next($bgColors);
+echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>";
+?>
+  <header>
     <?php
-    include 'title.php'; // print title
+    include 'title.php';
     ?>
     <?php
-    include 'input.php'; // print text input
+    include 'subtitle.php';
     ?>
-  </form>
   <?php
-  include 'print.php';
+  include 'form.php'; // print text input
   ?>
+  </header>
+  <section>
+    <?php
+    include 'paragraphs.php';
+    ?>
+  </section>
 </body> 
 </html>
