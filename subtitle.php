@@ -8,7 +8,8 @@ $adjectives = array(
   "dope",
   "sick",
   "fresh",
-  "rad"
+  "rad",
+  "the illest"
 );
 if ($isEmpty) {
   // empty, 0, or any integer
