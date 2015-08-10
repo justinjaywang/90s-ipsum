@@ -17,7 +17,7 @@ function generateIpsum($numParagraphs) {
 function generateParagraph() {
   // Returns paragraph.
   global $allWords;
-  $numPhrases = mt_rand(6,8);
+  $numPhrases = mt_rand(6,7);
   shuffle($allWords);
   $paragraph = generatePhrases($allWords, $numPhrases, "", ".");
   // echo "<p class='paragraph'>" . $paragraph . "</p>";
