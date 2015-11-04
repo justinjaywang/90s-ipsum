@@ -59,21 +59,20 @@ shuffle($bgColors);
 $bgColor = next($bgColors);
 echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>";
 ?>
-  <header>
+  <div class="wrap">
+    <header>
+      <?php
+      include 'title.php';
+      ?>
     <?php
-    include 'title.php';
+    include 'form.php'; // print text input
     ?>
-    <?php
-    include 'subtitle.php';
-    ?>
-  <?php
-  include 'form.php'; // print text input
-  ?>
-  </header>
-  <section>
-    <?php
-    include 'paragraphs.php';
-    ?>
-  </section>
+    </header>
+    <section>
+      <?php
+      include 'paragraphs.php';
+      ?>
+    </section>
+</div>
 </body> 
 </html>
