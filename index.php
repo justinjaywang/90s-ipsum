@@ -41,7 +41,8 @@ $bgColors = array(
   "aliceblue",
   "ghostwhite",
   "lavender",
-  "thistle"
+  "thistle",
+  "whitesmoke"
 );
 shuffle($fgColors);
 $fgColor = next($fgColors);
