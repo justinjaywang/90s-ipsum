@@ -5,7 +5,7 @@
   <title>90s Ipsum</title>
   <meta name="description" content="Dope filler text for your design project.">
   <meta name="author" content="Justin Wang, http://justinjaywang.com" />
-  <link rel="stylesheet" href="styles/style.php">
+  <link rel="stylesheet" href="style.php">
 </head>
 <?php
 include 'words.php'; // $allWords, $ninetiesWords
@@ -23,7 +23,6 @@ $fgColors = array(
   "indigo",
   "darkmagenta",
   "darkviolet",
-  "blueviolet",
   "purple"
 );
 $bgColors = array(
@@ -39,7 +38,6 @@ $bgColors = array(
   "mintcream",
   "azure",
   "honeydew",
-  "lightcyan",
   "aliceblue",
   "ghostwhite",
   "lavender",
