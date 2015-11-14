@@ -18,7 +18,7 @@ body {
 .wrap {
   margin: 3rem auto 6rem;
   width: 88.8889%;
-  max-width: 37rem;
+  max-width: 36rem;
 }
 h1 {
   font-size: 3em;
