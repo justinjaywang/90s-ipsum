@@ -22,6 +22,7 @@ body {
 }
 h1 {
   font-size: 3em;
+  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   text-rendering: optimizeLegibility;
 }
@@ -57,4 +58,10 @@ input[type="submit"] {
 }
 :-ms-input-placeholder {  
   color: inherit;
+}
+::-moz-selection {
+  background-color: rgba(255,255,0,0.25);
+}
+::selection {
+  background-color: rgba(255,255,0,0.25);
 }

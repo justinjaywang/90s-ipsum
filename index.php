@@ -64,6 +64,6 @@ echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>"
       include 'paragraphs.php';
       ?>
     </section>
-</div>
+  </div>
 </body> 
 </html>
