@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>90s Ipsum</title>
   <meta name="description" content="Dope filler text for your design project.">
-  <meta name="author" content="Justin Wang, http://justinjaywang.com" />
+  <meta name="author" content="Justin Wang, a child of the 90s." />
   <link rel="stylesheet" href="style.php">
 </head>
 <?php
