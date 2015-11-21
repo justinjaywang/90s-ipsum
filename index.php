@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>90s Ipsum</title>
-  <meta name="description" content="Dope filler text for your design project.">
-  <meta name="author" content="Justin Wang, a child of the 90s." />
-  <link rel="stylesheet" href="style.php">
-</head>
 <?php
 include 'words.php'; // $allWords, $ninetiesWords
 include 'generate.php'; // $paragraphs
@@ -48,6 +41,25 @@ shuffle($fgColors);
 $fgColor = next($fgColors);
 shuffle($bgColors);
 $bgColor = next($bgColors);
+?>
+<head>
+  <meta charset="utf-8">
+  <title>90s Ipsum</title>
+  <meta name="description" content="Dope filler text for your design project.">
+  <meta name="author" content="Justin Wang, a child of the 90s." />
+  <link rel="stylesheet" href="style.php">
+  <style>
+    ::-moz-selection {
+      background-color: <?php echo $fgColor; ?>;
+      color: <?php echo $bgColor; ?>;
+    }
+    ::selection {
+      background-color: <?php echo $fgColor; ?>;
+      color: <?php echo $bgColor; ?>;
+    }
+  </style>
+</head>
+<?php
 echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>";
 ?>
   <div class="wrap">
@@ -59,11 +71,11 @@ echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>"
     include 'form.php'; // print text input
     ?>
     </header>
-    <section>
+    <article>
       <?php
       include 'paragraphs.php';
       ?>
-    </section>
+    </article>
   </div>
 </body> 
 </html>

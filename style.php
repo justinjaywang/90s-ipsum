@@ -26,7 +26,7 @@ h1 {
   margin-bottom: 0.25rem;
   text-rendering: optimizeLegibility;
 }
-p {
+p span {
   -webkit-user-select: text;     
   -moz-user-select: text;
   -ms-user-select: text;
@@ -58,10 +58,4 @@ input[type="submit"] {
 }
 :-ms-input-placeholder {  
   color: inherit;
-}
-::-moz-selection {
-  background-color: rgba(255,255,0,0.25);
-}
-::selection {
-  background-color: rgba(255,255,0,0.25);
 }
