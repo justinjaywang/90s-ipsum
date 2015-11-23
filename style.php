@@ -59,3 +59,9 @@ input[type="submit"] {
 :-ms-input-placeholder {  
   color: inherit;
 }
+::-moz-selection {
+  background-color: yellow;
+}
+::selection {
+  background-color: yellow;
+}

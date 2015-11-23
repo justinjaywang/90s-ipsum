@@ -48,16 +48,6 @@ $bgColor = next($bgColors);
   <meta name="description" content="Dope filler text for your design project.">
   <meta name="author" content="Justin Wang, a child of the 90s." />
   <link rel="stylesheet" href="style.php">
-  <style>
-    ::-moz-selection {
-      background-color: <?php echo $fgColor; ?>;
-      color: <?php echo $bgColor; ?>;
-    }
-    ::selection {
-      background-color: <?php echo $fgColor; ?>;
-      color: <?php echo $bgColor; ?>;
-    }
-  </style>
 </head>
 <?php
 echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>";
