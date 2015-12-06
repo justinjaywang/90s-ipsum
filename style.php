@@ -90,7 +90,7 @@ a {
   text-rendering: optimizeLegibility;
   letter-spacing: -0.015em;
   line-height: 1.1;
-  margin-top: 0.75em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 .header__title,
