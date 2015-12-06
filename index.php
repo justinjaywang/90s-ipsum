@@ -6,7 +6,7 @@ include 'generate.php'; // $paragraphs
 $palettes = array (
   array("Black", "LightSteelBlue"),
   array("WhiteSmoke", "OrangeRed"),
-  array("LightYellow", "RebeccaPurple"),
+  array("LightYellow", "Indigo"),
   array("DarkSlateBlue", "PowderBlue"),
   array("LightCoral", "Yellow"),
   array("SteelBlue", "Aquamarine"),
@@ -37,8 +37,8 @@ $fgColor = $palette[1];
 <head>
   <meta charset="utf-8">
   <title>90s Ipsum</title>
-  <meta name="description" content="Dope filler text for your design project.">
-  <meta name="author" content="Justin Wang, a child of the 90s." />
+  <meta name="description" content="Dope filler text generator.">
+  <meta name="author" content="Justin Jay Wang, a child of the 90s." />
   <link rel="stylesheet" href="style.php">
   <style type="text/css">
     ::-moz-selection {
