@@ -54,20 +54,28 @@ $fgColor = $palette[1];
 <?php
 echo "<body style='color:" . $fgColor . "; background-color:" . $bgColor . ";'>";
 ?>
-  <div class="wrap">
-    <header>
-      <?php
-      include 'title.php';
-      ?>
-    <?php
-    include 'form.php'; // print text input
-    ?>
+  <div class="container container--wide nonFooter">
+    <header class="header">
+      <h4 class="header__title">90s Ipsum</h4>
     </header>
-    <article>
+    <main class="main">
       <?php
-      include 'paragraphs.php';
+      include 'main__title.php';
       ?>
-    </article>
+      <?php
+      include 'form.php'; // print text input
+      ?>
+      <section class="paragraphs">
+        <?php
+        include 'paragraphs.php';
+        ?>
+      </section>
+    </main>
+  </div>
+  <div class="container container--wide">
+    <footer class="footer">
+      <p class="footer__note">Made by <a class="footer__link" href="http://justinjay.wang">JJW</a> &middot; <?php echo $fgColor; ?> on <?php echo $bgColor; ?></p>
+    </footer>
   </div>
 </body> 
 </html>
