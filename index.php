@@ -37,7 +37,7 @@ $fgColor = $palette[1];
 <head>
   <meta charset="utf-8">
   <title>90s Ipsum</title>
-  <meta name="description" content="Dope filler text generator.">
+  <meta name="description" content="Dope filler text for your design project.">
   <meta name="author" content="Justin Jay Wang, a child of the 90s." />
   <link rel="stylesheet" href="style.php">
   <style type="text/css">

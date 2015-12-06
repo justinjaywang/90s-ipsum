@@ -8,7 +8,6 @@ $greetings = array (
 );
 $people = array (
   "dawg",
-  "home skillet",
   "homie",
   "dude",
   "hottie",
