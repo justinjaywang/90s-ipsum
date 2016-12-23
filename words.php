@@ -1,15 +1,10 @@
 <?php
-// reads from comma-delimited latin.txt and nineties.txt files to generate an array
-$latinName = "latin.txt";
+// reads from newline-delimited nineties.txt file to generate an array
 $ninetiesName = "nineties.txt";
-$latinFile = fopen($latinName, "r");
 $ninetiesFile = fopen($ninetiesName, "r");
-$latinContents = fread($latinFile, filesize($latinName));
 $ninetiesContents = fread($ninetiesFile, filesize($ninetiesName));
 $delimiter = "\n";
-$latinWords = explode($delimiter, $latinContents);
 $ninetiesWords = explode($delimiter, $ninetiesContents);
-$allWords = array_merge($latinWords, $ninetiesWords);
-fclose($latinFile);
+$allWords = $ninetiesWords;
 fclose($ninetiesFile);
 ?>
