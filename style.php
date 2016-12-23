@@ -10,7 +10,7 @@ header("Content-type: text/css; charset: UTF-8");
   box-sizing: border-box;
 }
 html {
-  font-size: 14px;
+  font-size: 15px;
   -webkit-user-select: none;     
   -moz-user-select: none;
   -ms-user-select: none;
@@ -18,9 +18,6 @@ html {
 body {
   margin: 0;
   cursor: default;
-  -webkit-font-smoothing: antialiased;
-  -font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh; // for sticky footer
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -66,7 +63,7 @@ a {
   max-width: 37rem;
 }
 .container--wide {
-  max-width: 1200px;
+  max-width: 1240px;
 }
 .main {
   zoom: 1;
@@ -75,7 +72,7 @@ a {
   width: 100%;
   max-width: 18.5rem;
   position: relative;
-  margin-bottom: 2.8em;
+  margin-bottom: 3em;
   float: left;
 }
 .paragraphs {
@@ -100,16 +97,16 @@ a {
   font-family: 'Cousine', monospace;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .paragraph {
   margin-top: 0;
-  margin-bottom: 1.4em;
+  margin-bottom: 1.5em;
 }
 .header__title,
 .footer__note {
-  margin-top: 1.4em;
-  margin-bottom: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 .paragraph span {
   -webkit-user-select: text;     
