@@ -4,35 +4,31 @@
 include 'words.php'; // $allWords, $ninetiesWords
 include 'generate.php'; // $paragraphs
 $palettes = array (
-  array("Black", "LightSteelBlue"),
-  array("WhiteSmoke", "OrangeRed"),
-  array("LightYellow", "Indigo"),
-  array("DarkSlateBlue", "PowderBlue"),
-  array("LightCoral", "Yellow"),
-  array("SteelBlue", "Aquamarine"),
-  array("Gainsboro", "Teal"),
-  array("MidnightBlue", "DeepPink"),
-  array("LightCoral", "Black"),
-  array("LightSteelBlue", "Teal"),
-  array("OrangeRed", "LightYellow"),
-  array("Indigo", "White"),
-  array("PowderBlue", "SlateBlue"),
-  array("Yellow", "SlateBlue"),
-  array("Aquamarine", "MidnightBlue"),
+  array("LightSteelBlue", "Black"), 
+  array("OrangeRed", "WhiteSmoke"),
+  array("Indigo", "LightYellow"),
+  array("Yellow", "DeepPink"),
+  array("Aquamarine", "SteelBlue"),
+  array("Teal", "Gainsboro"),
+  array("DeepPink", "MidnightBlue"),
   array("Teal", "LightSteelBlue"),
-  array("DeepPink", "Indigo"),
-  array("Black", "Aquamarine"),
-  array("DarkSlateBlue", "Yellow"),
-  array("MidnightBlue", "LightCoral"),
-  array("Teal", "White"),
-  array("DarkSlateBlue", "Aquamarine"),
-  array("MediumSpringGreen", "Black"),
-  array("Gainsboro", "DeepPink")
+  array("LightYellow", "OrangeRed"),
+  array("White", "Indigo"),
+  array("SlateBlue", "Yellow"),
+  array("MidnightBlue", "Aquamarine"),
+  array("LightSteelBlue", "Teal"),
+  array("Indigo", "DeepPink"),
+  array("Aquamarine", "Black"),
+  array("Yellow", "DarkSlateBlue"),
+  array("White", "Teal"),
+  array("Black", "MediumSpringGreen"), 
+  array("DeepPink", "Gainsboro"),
+  array("White", "Black")
 );
 shuffle($palettes);
 $palette = next($palettes);
-$bgColor = $palette[0];
-$fgColor = $palette[1];
+$fgColor = $palette[0];
+$bgColor = $palette[1];
 ?>
 <head>
   <meta charset="utf-8">
