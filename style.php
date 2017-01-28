@@ -117,6 +117,9 @@ a {
   outline: none;
   border: 2px solid;
   padding: 0.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 input[type="text"] {
   background-color: inherit;
