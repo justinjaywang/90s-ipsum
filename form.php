@@ -1,5 +1,5 @@
 <?php
-$startInput = "<input class='input' type='text' name='p' style='color:" . $fgColor . ";' placeholder='Enter a number' autofocus='autofocus' maxlength='1'>";
+$startInput = "<input class='input' type='text' name='p' style='color:" . $fgColor . ";' placeholder='Enter a number' autofocus='autofocus' maxlength='2'>";
 $tryAgainInput = "<input class='input' type='text' name='p' style='color:" . $fgColor . ";' placeholder='Try again' maxlength='2'>";
 if ($isEmpty) {
   $input = $startInput;
